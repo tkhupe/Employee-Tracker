@@ -1,4 +1,6 @@
-const function {}
+const function () {
+
+}
 
 const questions = [
     {
@@ -16,8 +18,8 @@ const questions = [
     {
         type: 'input',
         name: 'name',
-        message:"what is the employee's first_name"?',
-    }
+        message:"what is the employee's first_name"?';
+    };
 ];
 
 function init() {

@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
 });
 
 
-const addRole = new Role {
+const addRoleTitle = new RoleTitle {
     ${ 'job_title'} ${ 'salary'} ${ 'salary_id'} ${ 'department_name'}
     ${ 'department_name_id'}
 }
