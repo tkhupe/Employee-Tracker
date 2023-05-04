@@ -1,7 +1,7 @@
-SELECT * emplyee_id
-FROM employee_name
-JOIN eployee_id ON employee_name
+SELECT * AS role
+FROM role_id
+JOIN role_id ON employee,
 
-
+-- SELECT
 
 
