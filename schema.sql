@@ -1,22 +1,21 @@
-CREATE DATABASE hr_records_db,
-USE hr_records_db,
+CREATE DATABASE whatabuger,
 
 CREATE TABLE department (
-    department_name VARCHAR(30) NOT NULL,
-    department_id INT PRIMARY KEY
-);
+    name VARCHAR(30) NOT NULL,
+    departmentid,
+),
 
 CREATE TABLE role (
     role_name VARCHAR(30),
-    role_id INT PRIMARY KEY,
-    salary DECIMAL,
+    role_id INT,
+    salary DECIMAL(10),
     department_id VARCHAR(30)
     
-);
+),
 CREATE TABLE employee ( 
     first_name VARCHAR(30),
     last_name VARCHAR(30),
-    employee_id INT PRIMARY KEY,
+    employee_id INT,
     manager VARCHAR(30),
     manager_id INT,
     role VARCHAR(30),
