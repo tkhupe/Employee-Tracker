@@ -1,15 +1,15 @@
-CREATE DATABASE whatabuger,
-
+CREATE DATABASE hr_records;
+USE hr_records_db,
 CREATE TABLE department (
-    name VARCHAR(30) NOT NULL,
-    departmentid,
-),
-
+    department_name VARCHAR(30) NOT NULL,
+    department_id INT PRIMARY KEY
+)
 CREATE TABLE role (
+   
     role_name VARCHAR(30),
-    role_id INT,
-    salary DECIMAL(10),
-    department_id VARCHAR(30)
+    role_id INT PRIMARY KEY,
+    salary DECIMAL(5),
+    department_id INT NOT NULL
     
 ),
 CREATE TABLE employee ( 
@@ -18,5 +18,5 @@ CREATE TABLE employee (
     employee_id INT,
     manager VARCHAR(30),
     manager_id INT,
-    role VARCHAR(30),
+    employee_current BOOLEAN DEFAULT FALSE
 );
