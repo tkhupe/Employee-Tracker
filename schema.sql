@@ -1,17 +1,17 @@
-CREATE DATABASE hr_records;
-USE hr_records_db,
+DROP DATABASE IF EXISTS bells_hr_records;
+CREATE DATABASE bells_hr_records;
+USE bells_hr_records;
 CREATE TABLE department (
     department_name VARCHAR(30) NOT NULL,
     department_id INT PRIMARY KEY
-)
+);
+
 CREATE TABLE role (
    
-    role_title VARCHAR(30),
-    role_title_id INT PRIMARY KEY,
-    salary INT NOT NULL,
-    salary_id INT NOT NULL,
-    department_name VARCHAR(30),
-    department_id INT NOT NULL,
+    role_name VARCHAR(30),
+    role_id INT PRIMARY KEY,
+    salary DECIMAL(5),
+    department_id INT NOT NULL
     
 );
 CREATE TABLE employee ( 
@@ -20,7 +20,5 @@ CREATE TABLE employee (
     employee_id INT NOT NULL,
     manager VARCHAR(30),
     manager_id INT,
-     is_emplyee_current_? BOOLEAN NOT NULL,
-    
-
+    employee_current BOOLEAN DEFAULT FALSE
 );
