@@ -1,7 +1,7 @@
 USE bells_hr_records;
 INSERT INTO department (department_name, department_id)
 VALUES ('medical records', 123),
-       ('surgery', 8879);
+       ('surgery', 887);
        
 INSERT INTO role (role_name, salary)
 VALUES ('nurse', 5000),

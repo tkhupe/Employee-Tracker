@@ -1,15 +1,17 @@
-USE bells_hr_records
-SELECT * 
+USE bells_hr_records;
+SELECT *
 FROM employee_id
-JOIN department_id ON employee_id;
+JOIN department_id
+ON employee_id.department_id = department_id.department_id;
 
 SELECT *
-FROM role_id
-JOIN role_name
-ON employee_id;
+FROM department_id
+JOIN role
+ON department_id.department_id = role.department_id;
 
-SELECT * 
+SELECT *
 FROM role
-JOIN department_id ON role_id;
+JOIN manager
+ON role.role_id = manager.role_id;
 
 
